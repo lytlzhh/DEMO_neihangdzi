@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.llw.demo_neihangdzi.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#432408"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="阅读"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/sercher_id"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/zhangyueishuch_id"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="掌阅书城"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerlayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/framelayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/v" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout_id"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="100dp"
+                android:background="#FAF5F5" />
+
+            <ListView
+                android:id="@+id/listview_id"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:divider="@color/read"
+                android:dividerHeight="1px" />
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
